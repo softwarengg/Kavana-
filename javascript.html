@@ -1,0 +1,440 @@
+<html>
+    <head>
+        <script>
+            document.write("hello....");
+            console.log("js Application");
+        </script>
+    </head>
+</html>
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>add two numbers</title>
+
+</head>
+
+<body>
+
+  <div>
+
+    <form>
+
+      <div><label for="firstNumber">first number</label>
+
+         <input type="text" id="firstNumber"/></div>
+
+      <div><label for="secondNumber">second number</label>
+
+        <input type="text" id="secondNumber"/></div>
+
+      <div><label for="sumNumber">sum</label>
+
+        <input type="text" id="sumNumber"/></div>
+
+      <button type="button" onclick="doAdd();">Add</button>
+
+    </form>
+
+  </div>
+
+  <script type="text/javascript">
+
+    function doAdd() {
+
+      let first = parseInt(document.getElementById("firstNumber").value);
+
+      let second = parseInt(document.getElementById("secondNumber").value);
+
+      let sum = first + second;
+
+      document.getElementById("sumNumber").value = sum;
+
+    }
+
+  </script>
+
+   
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!--square- cube-->>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>find square or cube</title>
+
+ <script type="text/javascript" src="square-cube.js"></script>
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+ <h3>Find square/cube</h3>
+
+ <div class="container">
+
+  <form>
+
+   <div class="form-group">
+
+    <label for="number">number</label>
+
+    <input type="text" id="number" class="form-control" />
+
+   </div>
+
+   <div class="form-group">
+
+    <label for="output" id="output_caption">output</label>
+
+    <input type="text" id="output" class="form-control" />
+
+   </div>
+
+   <button type="button" class="btn btn-info" onclick="findResult(1)">find square</button>
+
+   <button type="button" class="btn btn-info" onclick="findResult(2)">find cube</button>
+
+  </form>
+
+ </div>
+
+</body>
+
+</html>
+
+
+
+<!--calculator-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>calculator</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <style>
+
+    .btn {
+
+      width: 60px;
+
+      height: 100%;
+
+    }
+
+    .row {
+
+      margin-bottom: 10px;
+
+    }
+
+  </style>
+
+  <script type="text/javascript" src="calc.js"></script>
+
+</head>
+
+<body>
+
+  <h3>Calculator</h3>
+
+  <div class="container" style="width:250px; display:inline-box;">
+
+    <div class="row">
+
+      <div class="col-lg-12">
+
+        <input type="text" id="box" class="form-control bg-light">
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('C')">C</button></div>
+
+      <div class="col-lg-3">
+
+        </div>
+
+      <div class="col-lg-3">
+
+        </div>
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('/')">/</button></div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('7')">7</button></div>
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('8')">8</button></div>
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('9')">9</button></div>
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('*')">*</button></div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('4')">4</button></div>
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('5')">5</button></div>
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('6')">6</button></div>
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('-')">-</button></div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('1')">1</button></div>
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('2')">2</button></div>
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('3')">3</button></div>
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('+')">+</button></div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-3"></div>
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('0')">0</button></div>
+
+      <div class="col-lg-3" ></div>
+
+      <div class="col-lg-3">
+
+        <button class="btn btn-info" onclick="calc('=')">=</button></div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
+
+<!--Greatest of 2 numbers-->
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title> Big Of 2 Numbers </title>
+
+    <style type="text/css">
+
+      @import url("style.css");
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div id="data">
+
+      <label for="firstNum"> First Number: </label>
+
+      <input type="text" id="firstNum">
+
+      <label for="secondNum"> Second Number: </label>
+
+      <input type="text" id="secondNum">
+
+    </div>
+
+    <div>
+
+      <p id="outputPara" onclick="findBigOf2()"> Click Me to get the Answer </p>
+
+    </div>
+
+    <script>
+
+      function findBigOf2() {
+
+        num1 = parseInt(document.getElementById("firstNum").value)
+
+        num2 = parseInt(document.getElementById("secondNum").value)
+
+        if(num1 > num2)
+
+          document.getElementById("outputPara").innerHTML = "Number1 = " + num1 + " is big"
+
+        else
+
+        document.getElementById("outputPara").innerHTML = "Number2 = " + num2 + " is big"
+
+      }
+
+    </script>
+
+  </body>
+
+</html>
+
+<!--Reverse the number-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+</head>
+<body>
+    <h2>Reverse a Number</h2>
+    <label for="numberInput">Enter a Number:</label>
+    <input type="number" id="numberInput">
+    <button onclick="reverseNumber()">Reverse</button>
+    <p id="result"></p>
+
+    <script>
+        function reverseNumber() {
+            // Get the input number
+            let number = document.getElementById("numberInput").value;
+            // Reverse the number
+            let reversedNumber = number.split('').reverse().join('');
+            // Display the reversed number
+            document.getElementById("result").innerText = "Reversed Number: " + reversedNumber;
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!--shopping cart-->
+let cart_rows = "";
+
+  for(let prod of cart) {
+
+    cart_rows = cart_rows + `<TR><TD>${prod.name}</TD>
+
+        <TD>${prod.qty}</TD>
+
+        <TD>${prod.price}</TD>
+
+        <TD>${prod.amount}</TD>
+
+        </TR>`;
+
+  }
+
+  let totalAmount = cart.reduce((sum,prod)=>{
+
+    return sum + parseInt(prod.amount);
+
+  },0)
+
+  let table = `<TABLE class="table table-border">
+
+    <TR>
+
+      <TH>product</TH>
+
+      <TH>qty</TH>
+
+      <TH>price</TH>
+
+      <TH>amount</TH>
+
+    </TR>
+
+    ${cart_rows}
+
+    <TR>
+
+      <TH colspan="3">Total</TH>
+
+      <TH>${totalAmount}</TH>
+
+    </TR>
+
+    </TABLE>`
+
+  document.getElementById("scart").innerHTML = table;
+
+}
+
